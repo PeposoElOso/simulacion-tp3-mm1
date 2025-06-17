@@ -34,7 +34,8 @@ class MM1Simulator:
         self.area_q += len(self.queue) * dt
         self.area_system += (len(self.queue) + (1 if self.server_busy else 0)) * dt
         self.time, self.last_event_time = t, t
-        self.sample_queue.append(len(self.queue))
+        system_size = len(self.queue) + (1 if self.server_busy else 0)
+        self.sample_queue.append(system_size)
         if event == "arrival":
             self.next_arrival = self.time + random.expovariate(self.lam)
             if not self.server_busy:
