@@ -103,7 +103,7 @@ def main():
     queue_limits = [0, 2, 5, 10, 50]
     results = []
 
-    for rho in arrival_ratios:
+    for rho in arrival_ratios: 
         lam = rho * args.service_rate
         print(f"\n=== ρ = {rho:.2f} (λ = {lam:.2f}) ===")
         for Q in queue_limits:

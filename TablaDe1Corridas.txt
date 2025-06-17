@@ -1,0 +1,5 @@
+\begin{tabular}{lrrrrrr}
+ & Pedido & Tamanio & CostosTotales & CostosOrden & CostosReserva & CostosEscasez \\
+0 & 60 & 100 & 154.800000 & 93.000000 & 61.700000 & 0.000000 \\
+\end{tabular}
+
